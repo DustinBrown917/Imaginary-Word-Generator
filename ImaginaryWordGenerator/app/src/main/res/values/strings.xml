@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Imaginary Word Generator</string>
+    <string name="num_of_words"># of Words:</string>
+    <string name="proper_checkbox_label">Proper</string>
+    <string name="punctuate_checkbox_label">Punctuate</string>
+    <string name="generate_button_text">Generate!</string>
+    <string name="view_saved_words_text">View Saved Words</string>
+    <string name="enter_count_er_msg">Please enter how many words you would like to generate.</string>
+    <string name="save_word">Save word</string>
+    <string name="save_screen_title">Saved Words</string>
+    <string name="back">Back</string>
+    <string-array name="algorithms_array">
+        <item>"(Algorithm)"</item>
+        <item>"Syllables"</item>
+        <item>"By-Character"</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_word">Delete word</string>
+
+</resources>

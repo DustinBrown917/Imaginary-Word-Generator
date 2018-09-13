@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/numAndProperLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num_of_words"
+            android:textSize="16sp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <TextView
+            android:id="@+id/seekerViewLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            />
+
+        <SeekBar
+            android:id="@+id/numOfWordsSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:max="9"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/algorithmAndPunctuateLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/numAndProperLinearLayout"
+        >
+
+        <CheckBox
+            android:id="@+id/properCheckbox"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="@string/proper_checkbox_label"
+            />
+
+        <CheckBox
+            android:id="@+id/punctuateCheckbox"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="@string/punctuate_checkbox_label"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/algorithmAndPunctuateLinearLayout"
+        android:layout_marginBottom="5dp"
+        android:text="@string/generate_button_text"
+        android:background="@color/colorAccent"
+        />
+
+    <FrameLayout
+        android:id="@+id/wordListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/generateButton"
+        >
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/viewSavedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wordListFragment"
+        android:layout_marginBottom="5dp"
+        android:text="@string/view_saved_words_text"
+        android:background="@color/colorAccent"
+        />
+
+</LinearLayout>
